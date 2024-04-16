@@ -1,0 +1,49 @@
+.heading {
+  width: 100%;
+  background-color: rgba(255, 247, 226, 1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo > img {
+  width: 250px;
+}
+
+.page-links > a {
+  text-decoration: none;
+  font-weight: 600;
+  margin: 30px;
+  font-size: 20px;
+}
+
+.active {
+  color: rgba(71, 71, 71, 1);
+}
+.not-active {
+  color: rgba(58, 100, 59, 1);
+}
+
+.auth-btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.login-btn {
+  border: 1px solid rgba(58, 100, 59, 1);
+}
+.signup-btn {
+  color: white;
+  background-color: rgba(58, 100, 59, 1);
+}

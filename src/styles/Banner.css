@@ -1,0 +1,96 @@
+.banner-main {
+  position: relative;
+}
+
+.background-img {
+  height: 150px;
+  overflow: hidden;
+}
+
+.background-img > img {
+  width: 100%;
+  height: 450px;
+  opacity: 0.5;
+}
+
+.profile-details {
+  position: absolute;
+  background-color: rgba(255, 251, 242, 1);
+  height: 150px;
+  width: 100%;
+  top: 100px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.user > img {
+  position: relative;
+  top: -30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 1);
+}
+
+.user-details {
+    margin: 15px;
+}
+
+.user-name > h2 {
+  font-size: 20px;
+  font-weight: 600;
+ 
+   
+}
+
+.user-name > p {
+    color: rgba(58, 100, 59, 1);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.user-rating {
+    font-size: 15px;
+    color: rgba(98, 98, 98, 1);
+}
+
+.data {
+  display: flex;
+  align-items: center;
+}
+
+.data > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.data > div :first-child {
+  font-size: 14px;
+  color: rgba(58, 100, 59, 1);
+  font-weight: 600;
+}
+
+.data > div :nth-child(2) {
+  font-size: 24px;
+  font-weight: 600;
+}
+.book-btn {
+  background-color: rgba(58, 100, 59, 1);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
