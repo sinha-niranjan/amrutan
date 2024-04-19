@@ -6,6 +6,7 @@ import Special from "../components/Special";
 import Concern from "../components/Concern";
 import Experience from "../components/Experience";
 import Feature from "../components/Feature";
+import Appointment from "../components/Appointment";
 
 const Home = () => {
   return (
@@ -29,7 +30,9 @@ const Home = () => {
             <Feature />
           </div>
         </div>
-        <div className="right-side"> This is right side</div>
+        <div className="right-side">
+        <Appointment />
+        </div>
       </div>
     </div>
   );
