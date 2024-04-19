@@ -5,6 +5,7 @@ import About from "../components/About";
 import Special from "../components/Special";
 import Concern from "../components/Concern";
 import Experience from "../components/Experience";
+import Feature from "../components/Feature";
 
 const Home = () => {
   return (
@@ -21,8 +22,12 @@ const Home = () => {
           <div className="concern-box">
             <Concern />
           </div>
-          <div className="experience-box"><Experience /></div>
-          <div className="feature-box"></div>
+          <div className="experience-box">
+            <Experience />
+          </div>
+          <div className="feature-box">
+            <Feature />
+          </div>
         </div>
         <div className="right-side"> This is right side</div>
       </div>

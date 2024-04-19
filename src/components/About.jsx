@@ -31,12 +31,10 @@ const About = () => {
         <p>Telugu</p>
       </div>
       <div className="about-icons">
-        
-          <img src={facebook} alt="facebook" />
-          <img src={instagram} alt="instagram" />
-          <img src={youtube} alt="youtube" />
-          <img src={x} alt="x" />
-         
+        <img src={facebook} alt="facebook" />
+        <img src={instagram} alt="instagram" />
+        <img src={youtube} alt="youtube" />
+        <img src={x} alt="x" />
       </div>
     </>
   );

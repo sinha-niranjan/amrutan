@@ -23,7 +23,8 @@
 .about-box,
 .special-box,
 .concern-box,
-.experience-box {
+.experience-box,
+.feature-box {
   width: 100%;
   border: 1px solid rgba(220, 220, 220, 1);
   border-radius: 10px;
@@ -33,7 +34,8 @@
 .about-box-heading,
 .special-heading,
 .concern-heading,
-.experience-heading {
+.experience-heading,
+.feature-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,7 +50,8 @@
 .about-box-heading > h2,
 .special-heading > h2,
 .concern-heading > h2,
-.experience-heading > h2 {
+.experience-heading > h2,
+.feature-heading > h2 {
   font-weight: 600;
   font-size: 24px;
   color: rgba(49, 49, 49, 1);
@@ -201,6 +204,66 @@
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;
+}
+
+.feature-review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgba(250, 250, 250, 1);
+  margin: 40px;
+  padding: 20px;
+}
+
+.review-user {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 90%;
+ 
+}
+.review-user > img {
+  margin-right: 20px;
+}
+
+.review-user > div > h4 {
+  color: rgba(47, 47, 47, 1);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.review-user > div > p , .review-user > p {
+  color: rgba(147, 147, 147, 1);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.review-user > p {
+  margin-left: auto;
+}
+
+.review-star {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 90%;
+  margin: 10px 0 0 0 ;
+}
+
+.review-description {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: justify ;
+  width: 90%;
+}
+
+.review-description > p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(46, 47, 46, 1);
+  /* margin: 10px 0 ; */
+  letter-spacing: 1px;
 }
 .right-side {
 }
