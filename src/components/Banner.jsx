@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/Banner.css";
 import backgroundImage from "../assets/background-banner.png";
 import avatar from "../assets/avatar.png";
+import check from "../assets/check.svg";
+import Stars from "./Stars";
 
 const banner = () => {
   return (
@@ -15,10 +17,15 @@ const banner = () => {
             <img src={avatar} alt="Avatar" />
             <div className="user-details">
               <div className="user-name">
-                <h2>Dr. Brue Willis</h2>
+                <h2>
+                  Dr. Brue Willis <img src={check} alt="check" />{" "}
+                </h2>
                 <p>Gynecologist</p>
               </div>
-              <div className="user-rating">4.2</div>
+              <div className="user-rating">
+                4.2
+                <Stars count={4} />
+              </div>
             </div>
           </div>
           <div className="data">
