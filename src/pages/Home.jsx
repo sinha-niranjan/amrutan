@@ -3,6 +3,8 @@ import Banner from "../components/Banner";
 import "../styles/Home.css";
 import About from "../components/About";
 import Special from "../components/Special";
+import Concern from "../components/Concern";
+import Experience from "../components/Experience";
 
 const Home = () => {
   return (
@@ -16,8 +18,10 @@ const Home = () => {
           <div className="special-box">
             <Special />
           </div>
-          <div className="concern-box">Concern</div>
-          <div className="experience-box"></div>
+          <div className="concern-box">
+            <Concern />
+          </div>
+          <div className="experience-box"><Experience /></div>
           <div className="feature-box"></div>
         </div>
         <div className="right-side"> This is right side</div>

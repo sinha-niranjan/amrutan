@@ -20,14 +20,20 @@
   align-items: center;
 }
 
-.about-box,.special-box {
+.about-box,
+.special-box,
+.concern-box,
+.experience-box {
   width: 100%;
   border: 1px solid rgba(220, 220, 220, 1);
   border-radius: 10px;
   margin-top: 20px;
 }
 
-.about-box-heading,.special-heading {
+.about-box-heading,
+.special-heading,
+.concern-heading,
+.experience-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,9 +45,13 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-.about-box-heading> h2,.special-heading > h2 {
-  font-weight: 500;
+.about-box-heading > h2,
+.special-heading > h2,
+.concern-heading > h2,
+.experience-heading > h2 {
+  font-weight: 600;
   font-size: 24px;
+  color: rgba(49, 49, 49, 1);
 }
 
 .about-box-heading > div {
@@ -113,7 +123,8 @@
   padding: 5px 20px;
 }
 
-.about-icons , .special-icons{
+.about-icons,
+.special-icons {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -121,6 +132,75 @@
   margin: 50px;
 }
 
- 
+.concern-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 10px;
+  margin: 30px;
+  grid-row-gap: 10px;
+}
+
+.concern-grid-item {
+  background-color: rgba(247, 247, 252, 1);
+  color: rgba(58, 100, 59, 1);
+  font-family: "Poppins";
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.concern-grid-item-btn {
+  color: rgba(58, 100, 59, 1);
+  font-family: "Poppins";
+  padding: 8px;
+  text-align: center;
+  border-radius: 20px;
+  border: 0.5px solid rgba(224, 223, 223, 1);
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.experience-details > h3 {
+  color: rgba(58, 100, 59, 1);
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.experience-details > hr {
+  border: 0.5px solid rgba(209, 213, 209, 1);
+  width: 75%;
+}
+
+.experience-period {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10px;
+}
+.experience-period > div > h4 {
+  color: rgba(51, 53, 72, 1);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.experience-period > p,
+.experience-period > div > p {
+  color: rgba(51, 53, 72, 0.5);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.experience-period > p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
 .right-side {
 }
