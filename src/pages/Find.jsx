@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Find.css";
 import location from "../assets/location.svg";
 import { FaArrowRight } from "react-icons/fa6";
+import ProfileCard from "../components/ProfileCard";
 
 const Find = () => {
   return (
@@ -24,11 +25,47 @@ const Find = () => {
               id=""
               className="service-search"
               placeholder="eg. Doctor, specialisation, clinic name"
-                      />
-                      <FaArrowRight />
+            />
+            <FaArrowRight />
           </div>
         </div>
       </div>
+      <div className="find-filters">
+        <select name="" id="">
+          <option value="">Expertise</option>
+          <option value="">others</option>
+        </select>
+        <select name="" id="">
+          <option value="">Gender</option>
+          <option value="">others</option>
+        </select>
+        <select name="" id="">
+          <option value="">Fees</option>
+          <option value="">others</option>
+        </select>
+        <select name="" id="">
+          <option value="">Language</option>
+          <option value="">others</option>
+        </select>
+        <select
+          name=""
+          id=""
+          style={{
+            backgroundColor: "rgba(220, 238, 220, 1)",
+          }}
+        >
+          <option value="">All Filters</option>
+          <option value="">others</option>
+        </select>
+      </div>
+      <hr />
+      <div className="profile-grid">
+        <ProfileCard />
+        <ProfileCard />
+        <ProfileCard />
+      </div>
+
+      
     </div>
   );
 };
