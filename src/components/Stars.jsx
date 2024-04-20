@@ -6,7 +6,7 @@ const Stars = ({ count }) => {
     <>
       {" "}
       {[0, 1, 2, 3, 4]?.map((i) =>
-        i < count ? <img src={stars} alt="stars" /> : null
+        i < count ? <img key={i} src={stars} alt="stars" /> : null
       )}
     </>
   );

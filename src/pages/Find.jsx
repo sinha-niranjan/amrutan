@@ -3,6 +3,7 @@ import "../styles/Find.css";
 import location from "../assets/location.svg";
 import { FaArrowRight } from "react-icons/fa6";
 import ProfileCard from "../components/ProfileCard";
+import { RxCross2 } from "react-icons/rx";
 
 const Find = () => {
   return (
@@ -59,13 +60,29 @@ const Find = () => {
         </select>
       </div>
       <hr />
+      <div className="filter-added">
+        <div>
+          <p>Hair Care</p>
+          <RxCross2 />
+        </div>{" "}
+        <div>
+          <p>Female</p>
+          <RxCross2 />
+        </div>{" "}
+        <div>
+          <p>Rs.0-Rs.500</p>
+          <RxCross2 />
+        </div>
+        <div>
+          <p>Hindi</p>
+          <RxCross2 />
+        </div>
+      </div>
       <div className="profile-grid">
         <ProfileCard />
         <ProfileCard />
         <ProfileCard />
       </div>
-
-      
     </div>
   );
 };

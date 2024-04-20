@@ -86,6 +86,36 @@
   border: 1px solid rgba(237, 237, 237, 1);
 }
 
+.filter-added {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+  margin: 40px;
+  margin-right: 200px;
+}
+
+.filter-added > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(234, 242, 234, 1);
+  border-radius: 20px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.filter-added > div > p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter";
+  color: rgba(0, 0, 0, 1);
+}
+
+.filter-added > div > svg {
+  color: rgba(131, 131, 131, 1);
+}
+
 .profile-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -104,10 +134,33 @@
 }
 
 .profile-grid-item > img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin: 30px 0;
+}
+
+.profile-rating {
+  position: relative;
+}
+
+.profile-rating > p {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    rgba(11, 11, 11, 1),
+    rgba(11, 11, 11, 0.79)
+  );
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+  gap: 1px;
+  position: absolute;
+  top: -50px;
+ left: -30px;
 }
 
 .profile-grid-item > h2 {
@@ -194,7 +247,7 @@
 }
 
 .book-consultation-btn {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 300px;

@@ -3,10 +3,14 @@ import profile from "../assets/profile.png";
 import { IoIosLink } from "react-icons/io";
 import { BiMessageDetail } from "react-icons/bi";
 import { LuGraduationCap } from "react-icons/lu";
+import Stars from "./Stars"
 const ProfileCard = () => {
   return (
     <div className="profile-grid-item">
       <img src={profile} alt="profile" />
+      <div className="profile-rating">
+        <p>4.5 <Stars count={1} /></p>
+      </div>
       <h2>Dr. Prerna Narang </h2>
       <div className="profile-detail">
         <IoIosLink /> <p> Male-Female Infertility </p>
