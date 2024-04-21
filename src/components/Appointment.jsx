@@ -1,11 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import calendar from "../assets/calendar.svg";
 import left from "../assets/left.svg";
 import right from "../assets/right.svg";
 import activeCheck from "../assets/activeCheck.svg";
 
+const options = [
+  {
+    heading: "In-Clinic",
+    time: "45 Mins",
+  },
+  {
+    heading: "Video",
+    time: "45 Mins",
+  },
+  {
+    heading: "Chat",
+    time: "10 Mins",
+  },
+];
+
+const times = [
+  "09:00 AM",
+  "09:30AM",
+  "10:00 AM",
+  "10:45 AM",
+  "11:00 AM",
+  "11:30 AM",
+  "04:00 PM",
+  "04:15 PM",
+  "04:30 PM",
+  "04:45 PM",
+  "05:15 PM",
+];
+
 const Appointment = () => {
-    const session = true;
+  const [val, setVal] = useState(0);
+  const [timeActive, setTimeActive] = useState(2);
+
   return (
     <>
       <div className="appointment-fee">
@@ -17,18 +48,19 @@ const Appointment = () => {
         <hr className="hr-line" />
       </div>
       <div className="options">
-        <div className="option">
-          <h5>In-Clinic</h5>
-          <p>45 Mins</p>
-        </div>
-        <div className="option-active">
-          <h5>Video{session && (<img src={activeCheck} alt="activeCheck" />)} </h5>
-          <p>45 Mins</p>
-        </div>
-        <div className="option">
-          <h5>Chat</h5>
-          <p>10 Mins</p>
-        </div>
+        {options.map((option, indx) => (
+          <div
+            key={indx}
+            className={val == indx ? "option-active" : "option"}
+            onClick={() => setVal(indx)}
+          >
+            <h5>
+              {option.heading}
+              {val == indx && <img src={activeCheck} alt="activeCheck" />}{" "}
+            </h5>
+            <p>{option.time}</p>
+          </div>
+        ))}
       </div>
 
       <div className="session-line" style={{ maxWidth: "85%" }}>
@@ -60,24 +92,44 @@ const Appointment = () => {
       <div className="times">
         <h3>Morning</h3>
         <div className="time-grid">
-          <div className="time-grid-item">09:00 AM</div>
-          <div className="time-grid-item">09:00 AM</div>
-          <div className="time-grid-item">09:00 AM</div>
-          <div className="time-grid-item">09:00 AM</div>
-          <div className="time-grid-item">09:00 AM</div>
-          <div className="time-grid-item">09:00 AM</div>
-          <div className="time-grid-item">09:00 AM</div>
+          {times.map(
+            (time, indx) =>
+              time.includes("AM") && (
+                <div
+                  key={indx}
+                  className={
+                    timeActive !== indx
+                      ? "time-grid-item"
+                      : "time-grid-item-active"
+                  }
+                  onClick={() => setTimeActive(indx)}
+                >
+                  {time}
+                </div>
+              )
+          )}
         </div>
       </div>
 
       <div className="times">
         <h3>Evening</h3>
         <div className="time-grid">
-          <div className="time-grid-item">04:00 PM</div>
-          <div className="time-grid-item">04:15 PM</div>
-          <div className="time-grid-item">04:30 AM</div>
-          <div className="time-grid-item">04:45 PM</div>
-          <div className="time-grid-item">05:15 PM</div>
+          {times.map(
+            (time, indx) =>
+              time.includes("PM") && (
+                <div
+                  key={indx}
+                  className={
+                    timeActive !== indx
+                      ? "time-grid-item"
+                      : "time-grid-item-active"
+                  }
+                  onClick={() => setTimeActive(indx)}
+                >
+                  {time}
+                </div>
+              )
+          )}
         </div>
       </div>
       <div className="appointment-btn ">Make An Appointment</div>
